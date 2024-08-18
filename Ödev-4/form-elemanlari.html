@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> HTML Forms</h1>
+    
+    <form>
+        <fieldset>  <!-- First, I wanted to frame the personel informations-->
+            <legend>Kişisel Bilgileriniz</legend>
+            <div>
+                <label for="fname">Adınız:</label>
+                <input type="text" id="fname"><br>
+                <label for="lname">Soyadınız:</label>
+                <input type="text" id="lname"><br>
+            </div>
+            <div>
+                <label for="email">E-postanız:</label>
+                <input type="email" id="email"><br>
+            </div>
+            <div>
+                <label for="password">Şifreniz:</label>
+                <input type="password" id="password"><br>
+            </div>
+            <div>
+                <label for="gender">Cinsiyetiniz:</label> <!-- Checkbox Input -->
+                <input type="radio" name="gender" value="male">Erkek
+                <input type="radio" name="gender" value="female">Kadın
+            </div>
+        </fieldset>
+        <!-- Select Input -->
+        <label for="fruit">Favori meyveniz hangisi?</label><br>
+        <select id="fruit" name="fruit">
+            <option value="">Seçiniz..</option>
+            <optgroup label="Yaz Meyveleri">
+                <option value="cherry">Kiraz</option>
+                <option value="watermelon">Karpuz</option>
+                <option value="peach">Şeftali</option>
+                <option value="plum">Erik</option>
+            </optgroup>
+            <optgroup label="Kış Meyveleri">
+                <option value="apple">Elma</option>
+                <option value="orange">Portakal</option>
+                <option value="pear">Armut</option>
+                <option value="kiwi">Kivi</option><br>
+            </optgroup>
+        </select>
+        <!-- Textarea Input -->
+        <fieldset>  
+            <legend>Fikirleriniz bizim için önemli...</legend>
+            <label for="message">Mesajınız:</label><br>
+            <textarea id="message" name="message" rows="10" cols="80"></textarea>
+
+        </fieldset>
+        <div>
+            <button type="submit">Gönder...</button>
+        </div>
+
+    </form>
+</body>
+</html>
