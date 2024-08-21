@@ -1,0 +1,1 @@
+Hello! This was a homework assignment where I utilized my HTML skills. I used CSS to style and enhance the page.
