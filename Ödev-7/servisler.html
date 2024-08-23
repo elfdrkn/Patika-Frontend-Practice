@@ -13,8 +13,45 @@
             color: #333;
             background-color: #f4f4f4;
         }
+    }
+        header {
+            background-color: azure;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        h1{
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        nav {
+            margin-top: 10px
+        }
 
-        h1 {
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px; /* Liste öğeleri arasında boşluk bırakır */ 
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #e9e9e9;
+            transition: background-color 0.3s, color 0.3s; 
+        }
+        nav ul li a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        h1.c1 {
             background-color: #007BFF;
             color: #fff;
             padding: 20px;
@@ -75,6 +112,17 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1 class="c1">Üniversite Tanıtım Rehberi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkinda.html">Hakkında</a></li>
+                <li><a href="servisler.html">Servisler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Hizmetlerimiz</h1>
     <main> 
         <section> <!-- Etkinlikler bölümü -->
